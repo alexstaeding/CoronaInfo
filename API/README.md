@@ -2,6 +2,10 @@
 
 ## Usage
  
+### Docker
+
+
+
 ### Development Purposes
 
 For development purposes you can use flasks integrated wsgi server. Don't do this in production mode! Running the API
