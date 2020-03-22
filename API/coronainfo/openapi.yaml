@@ -26,6 +26,64 @@ paths:
                       type: string
                     attributes:
                       type: object
+                      properties:
+                        Date:
+                          type: string
+                          format: 'date-time'
+                        Country:
+                          type: object
+                          properties:
+                            Name:
+                              type: string
+                            ShortName:
+                              type: string
+                              description: ISO 3166 CountryShort
+                        Province:
+                          type: object
+                          properties:
+                            Name:
+                              type: string
+                            ShortName:
+                              type: string
+                        District:
+                          type: object
+                          properties:
+                            Name:
+                              type: string
+                            ShortName:
+                              type: string
+                        Geo:
+                          type: object
+                          properties:
+                            Latitude:
+                              type: number
+                              format: float
+                            Longitude:
+                              type: number
+                              format: float
+                            Middled:
+                              type: boolean
+                        AgeGroup:
+                          type: string
+                        Gender:
+                          type: string
+                          enum: [male, female]
+                        Count:
+                          type: object
+                          properties:
+                            Confirmed:
+                              type: number
+                              format: int64
+                            Deaths:
+                              type: number
+                              format: int64
+                            Recovered:
+                              type: number
+                              format: int64
+                            Suspected:
+                              type: number
+                              format: int64
+
       responses:
         '200':
           description: OK
