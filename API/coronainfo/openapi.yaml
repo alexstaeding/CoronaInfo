@@ -84,5 +84,19 @@ paths:
                               type: number
                               format: int64
       responses:
-        '200':
-          description: OK
+        '201':
+          description: Created
+          content:
+            application/vnd.api+json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                      attributes:
+                        type: object
+                      id:
+                        type: string
