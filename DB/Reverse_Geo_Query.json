@@ -1,0 +1,26 @@
+GET de_gemeinden/_search
+{
+    "query":{
+        "bool": {
+            "must": {
+                "match_all": {}
+            },
+            "filter": {
+                    "geo_shape": {
+                        "coordinates": {
+                          "relation": "contains",
+                            "shape": {
+                                "type": "point",
+                                "coordinates" : 
+                                   [
+                                      12.12247,
+                                      47.85637
+                                    ]
+
+                            }
+                        }
+                    }
+                }
+        }
+    }
+}
