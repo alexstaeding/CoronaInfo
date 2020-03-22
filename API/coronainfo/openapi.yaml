@@ -83,7 +83,6 @@ paths:
                             Suspected:
                               type: number
                               format: int64
-
       responses:
         '200':
           description: OK
