@@ -4,6 +4,16 @@
  
 ### Docker
 
+The REST-API can be used as a Docker container, allowing for easy deploy and development. The required parameters to
+access the ES instance can be specified as enviromental parameters. The following table shows the accordind parameters
+and default values
+
+| ENV | Description | Default |
+| --- | ----------- | ------- |
+| ELASTIC_SEARCH_HOST | URL or IP of ES Instance | localhost |
+| ELASTIC_SEARCH_PORT | PORT to contact the ES instance | 9243 |
+| ELASTIC_SEARCH_USER | Username to access the instance | elastic |
+| ELASTIC_SEARCH_PASS | Password to access the instance | elastic |
 
 
 ### Development Purposes
