@@ -1,1 +1,2 @@
 connexion[swagger-ui]==2.6.0
+elasticsearch==7.6.0

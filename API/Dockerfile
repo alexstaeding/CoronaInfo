@@ -5,6 +5,7 @@ FROM python:3.7-slim-buster
 # ############################################################################ #
 COPY . /coronainfo
 WORKDIR /coronainfo
+RUN chmod 777 /coronainfo/docker_entrypoint.sh
 
 # ############################################################################ #
 #                    Install Application and Dependencies                      #
@@ -18,5 +19,5 @@ RUN apt-get update \
 # ############################################################################ #
 #                           RUN COMMAND LINE                                   #
 # ############################################################################ #
-
-CMD ["python coronainfo/app.py"]
+EXPOSE 8080
+ENTRYPOINT ["/coronainfo/docker_entrypoint.sh"]
