@@ -1,0 +1,28 @@
+{
+    "Date": "",
+    "Country": {
+        "Name": "",
+        "ShortName": "" # CountryShort (ISO 3166),
+    },
+    "Province": {
+        "Name": "",
+        "ShortName": ""
+    },
+    "District": {
+        "Name": "",
+        "ShortName": ""
+    },
+    "Geo": {
+        "Latitude": 11.22
+        "Longitude": 11.2
+        "Middled": true/False
+    },
+    "AgeGroup": "",
+    "Gender": "",
+    "Count": {
+        "Confirmed": 122,
+        "Deaths": 0,
+        "Recovered": 122,
+        "Suspected": 0
+    }
+}
